@@ -1,0 +1,49 @@
+﻿<Window x:Class="museum.NewMuseum"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:museum"
+        mc:Ignorable="d"
+        Title="Добавление музея" Height="400" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+    <Window.Background>
+        <ImageBrush ImageSource="/1674714007_top-fon-com-p-foni-dlya-prezentatsii-na-temu-istoriya-206.jpg"/>
+    </Window.Background>
+    <Grid>
+        <TextBox x:Name="NameMuseumBox" HorizontalAlignment="Left" Margin="327,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="318" Height="34" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" VerticalContentAlignment="Center" Background="White" FontSize="18" FontWeight="Bold" FontFamily="Arial Black">
+            <TextBox.Foreground>
+                <ImageBrush ImageSource="/1674765679_top-fon-com-p-krasivii-fon-dlya-prezentatsii-muzhskoi-18.jpg"/>
+            </TextBox.Foreground>
+            <TextBox.BorderBrush>
+                <ImageBrush ImageSource="/1674765679_top-fon-com-p-krasivii-fon-dlya-prezentatsii-muzhskoi-18.jpg"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox Name="CityBox" HorizontalAlignment="Left" Margin="327,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="318" Height="34" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" VerticalContentAlignment="Center" Background="White" FontSize="18" FontWeight="Bold" FontFamily="Arial Black">
+            <TextBox.Foreground>
+                <ImageBrush ImageSource="/1674765679_top-fon-com-p-krasivii-fon-dlya-prezentatsii-muzhskoi-18.jpg"/>
+            </TextBox.Foreground>
+            <TextBox.BorderBrush>
+                <ImageBrush ImageSource="/1674765679_top-fon-com-p-krasivii-fon-dlya-prezentatsii-muzhskoi-18.jpg"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Label  Content="Название музея" HorizontalAlignment="Left" Margin="73,99,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Arial Black" FontSize="24">
+            <Label.Foreground>
+                <ImageBrush ImageSource="/1674765679_top-fon-com-p-krasivii-fon-dlya-prezentatsii-muzhskoi-18.jpg"/>
+            </Label.Foreground>
+        </Label>
+        <Label  Content="Город" HorizontalAlignment="Left" Margin="216,165,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" FontFamily="Arial Black">
+            <Label.Foreground>
+                <ImageBrush ImageSource="/1674765679_top-fon-com-p-krasivii-fon-dlya-prezentatsii-muzhskoi-18.jpg"/>
+            </Label.Foreground>
+        </Label>
+        <Button Name="AddMuseum" Content="Добавить" HorizontalAlignment="Left" Margin="486,226,0,0" VerticalAlignment="Top" Width="159" Height="38" Background="White" Click="AddMuseum_Click" FontWeight="Bold" FontSize="18" FontFamily="Arial Black">
+            <Button.BorderBrush>
+                <ImageBrush ImageSource="/1674765679_top-fon-com-p-krasivii-fon-dlya-prezentatsii-muzhskoi-18.jpg"/>
+            </Button.BorderBrush>
+            <Button.Foreground>
+                <ImageBrush ImageSource="/1674765679_top-fon-com-p-krasivii-fon-dlya-prezentatsii-muzhskoi-18.jpg"/>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="Exit" Content="Назад" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="Red" FontSize="20" FontWeight="Bold" Click="Exit_Click" BorderBrush="{x:Null}"/>
+    </Grid>
+</Window>
