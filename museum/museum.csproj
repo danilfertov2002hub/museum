@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="09.jpg" />
+    <None Remove="1674714007_top-fon-com-p-foni-dlya-prezentatsii-na-temu-istoriya-206.jpg" />
+    <None Remove="1674765679_top-fon-com-p-krasivii-fon-dlya-prezentatsii-muzhskoi-18.jpg" />
+    <None Remove="22148c3b6a8ab37f4fa4d3e3493feb6e.jpeg" />
+    <None Remove="Coat_of_arms_of_Tomsk_Oblast,_Russia.svg.png" />
+    <None Remove="free-icon-profile-8976457.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="09.jpg" />
+    <Resource Include="1674714007_top-fon-com-p-foni-dlya-prezentatsii-na-temu-istoriya-206.jpg" />
+    <Resource Include="1674765679_top-fon-com-p-krasivii-fon-dlya-prezentatsii-muzhskoi-18.jpg" />
+    <Resource Include="22148c3b6a8ab37f4fa4d3e3493feb6e.jpeg" />
+    <Resource Include="Coat_of_arms_of_Tomsk_Oblast,_Russia.svg.png" />
+    <Resource Include="free-icon-profile-8976457.png" />
+  </ItemGroup>
+
+</Project>
