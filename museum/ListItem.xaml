@@ -1,0 +1,22 @@
+﻿<Window x:Class="museum.ListItem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:museum"
+        mc:Ignorable="d"
+        Title="Список экспонатов" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+    <Window.Background>
+        <ImageBrush ImageSource="/1674765679_top-fon-com-p-krasivii-fon-dlya-prezentatsii-muzhskoi-18.jpg"/>
+    </Window.Background>
+    <Grid>
+        <DataGrid x:Name="ItemGrid" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" SelectedItem="{Binding Item}"  Margin="90,100,90,80" BorderBrush="{x:Null}" Background="{x:Null}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название экспоната" Width="150" Binding="{Binding NameItem}"/>
+                <DataGridTextColumn Header="Музей" Width="180" Binding="{Binding Museum.NameMuseum}"/>
+                <DataGridTextColumn Header="Возраст" Width="90" Binding="{Binding Age}"/>
+                <DataGridTextColumn Header="Дата начала хранения" Width="200" Binding="{Binding StorageDate}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
